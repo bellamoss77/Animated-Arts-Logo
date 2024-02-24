@@ -1,0 +1,52 @@
+@import url("https://use.typekit.net/efa7ivj.css");
+/*  MIXINS/VARIABLES/KEYFRAMES  */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "sofia-pro", sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.container.grid, .container.columns {
+  align-content: stretch;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.container.grid .logoEl, .container.columns .logoEl {
+  flex-basis: 50%;
+}
+.container.plain .logoEl {
+  background: transparent;
+  color: #fff;
+  padding: 0;
+}
+.container .logoEl {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: -5%;
+}
+.container .presents {
+  font-size: 3rem;
+  padding-left: 2%;
+  display: none;
+}
+.container.final .presents {
+  display: block;
+}/*# sourceMappingURL=styles.css.map */

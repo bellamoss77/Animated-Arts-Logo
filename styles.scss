@@ -1,0 +1,57 @@
+@import url("https://use.typekit.net/efa7ivj.css");
+
+/*  MIXINS/VARIABLES/KEYFRAMES  */
+
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "sofia-pro", sans-serif;
+    font-weight: 400;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    @include flex(row, center, center);
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    &.grid,
+    &.columns {
+        align-content: stretch;
+        align-items: stretch;
+        flex-wrap: wrap;
+        .logoEl {
+            flex-basis: 50%;
+        }
+    }
+    &.plain .logoEl {
+        background: transparent;
+        color: #fff;
+        padding: 0;
+    }
+    .logoEl {
+        @include flex(row, center, center);
+        padding-left: -5%;
+    }
+    .presents {
+        font-size: 3rem;
+        padding-left: 2%;
+        display: none;
+    }
+    &.final .presents {
+        display: block;
+    }
+}
