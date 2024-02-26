@@ -9,10 +9,42 @@ let masterTl = gsap.timeline();
 masterTl.fromTo(pv, {
     scale: 0,
     y: -100,
-    rotation: 0
-}, {
+    rotation: -360
+},
+{
     scale: 1,
+    y: 100,
+    x: 100,
+    rotation: 0,
+    duration: 2,
+    ease: 'bounce'
+})
+masterTl.to(pv, {
     y: 0,
-    rotation: 360
+    x: 0,
+    rotation: 360,
+    duration: 1,
+    ease: 'elastic'
+})
+masterTl.fromTo(cc, {
+    scale: 0,
+    y: 300,
+    x: 300,
+    rotation: -90
+},
+{
+    scale: 1,
+    y: -50,
+    x: -100,
+    rotation: 90,
+    duration: 2,
+    ease: 'bounce'
+}, '<')
+masterTl.to(cc, {
+    y: 0,
+    x: 0,
+    rotation: 0,
+    duration: 1,
+    ease: 'elastic'
 })
 
