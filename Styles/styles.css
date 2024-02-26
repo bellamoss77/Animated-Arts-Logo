@@ -1,10 +1,42 @@
 @import url("https://use.typekit.net/efa7ivj.css");
 /*  MIXINS/VARIABLES/KEYFRAMES  */
+@keyframes press {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes hoverBtn {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.25);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 * {
   box-sizing: border-box;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 0;
   margin: 0;
   font-family: "sofia-pro", sans-serif;
@@ -49,4 +81,27 @@ body {
 }
 .container.final .presents {
   display: block;
+}
+
+#nextBtn {
+  border: 2px solid purple;
+  box-shadow: 5px 5px 3px 2px rgba(0, 0, 0, 0.5);
+  padding: 2% 6%;
+  margin-bottom: 5%;
+  background-color: black;
+  color: white;
+  transform-origin: center;
+}
+#nextBtn a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-style: italic;
+}
+#nextBtn a i {
+  margin-left: 5px;
+}
+#nextBtn:hover {
+  cursor: pointer;
+  animation: hoverBtn 2s infinite;
 }/*# sourceMappingURL=styles.css.map */

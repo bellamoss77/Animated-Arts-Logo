@@ -26,3 +26,13 @@ function nextState() {
 }
 
 gsap.delayedCall(1, nextState);
+
+gsap.registerPlugin(TextPlugin);
+
+const presentsText = document.querySelector('.presents');
+
+gsap.to(presentsText, {
+    duration: 2,
+    text: "presents...",
+    ease: 'none'
+});
