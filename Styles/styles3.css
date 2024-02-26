@@ -1,0 +1,78 @@
+@import url("https://use.typekit.net/efa7ivj.css");
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.scene {
+  width: 200px;
+  height: 200px;
+  perspective: 600px;
+}
+.scene .cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-100px);
+}
+.scene .cube .cube-face {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+.scene .cube .cube-face_front {
+  transform: rotateY(0deg) translateZ(100px);
+}
+.scene .cube .cube-face_right {
+  transform: rotateY(90deg) translateZ(100px);
+}
+.scene .cube .cube-face_back {
+  transform: rotateY(180deg) translateZ(100px);
+}
+.scene .cube .cube-face_left {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+.scene .cube .cube-face_top {
+  transform: rotateX(90deg) translateZ(100px);
+}
+.scene .cube .cube-face_bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+#nextBtn, #prevBtn {
+  position: absolute;
+  margin-bottom: 2px;
+  padding: 0 3%;
+  border-radius: 50%;
+  flex-shrink: 0;
+  transform-origin: center;
+  opacity: 0.5;
+}
+#nextBtn a, #prevBtn a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  font-family: "responder-p", sans-serif;
+}
+#nextBtn:hover, #prevBtn:hover {
+  cursor: pointer;
+  opacity: 1;
+  animation: pulsingArrow 2s infinite;
+}
+
+#prevBtn {
+  left: 5%;
+  top: 0;
+}
+
+#nextBtn {
+  right: 5%;
+  top: 0;
+}/*# sourceMappingURL=styles3.css.map */
