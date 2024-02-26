@@ -33,4 +33,37 @@ body {
 }
 .animationScene .presents {
   width: 50vw;
+}
+.animationScene .presents path {
+  stroke: transparent;
+}
+
+#nextBtn, #prevBtn {
+  position: absolute;
+  margin-bottom: 2px;
+  padding: 0 3%;
+  border-radius: 50%;
+  flex-shrink: 0;
+  transform-origin: center;
+  opacity: 0.5;
+}
+#nextBtn a, #prevBtn a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+}
+#nextBtn:hover, #prevBtn:hover {
+  cursor: pointer;
+  opacity: 1;
+  animation: pulsingArrow 2s infinite;
+}
+
+#prevBtn {
+  left: 5%;
+  top: 0;
+}
+
+#nextBtn {
+  right: 5%;
+  top: 0;
 }/*# sourceMappingURL=styles4.css.map */

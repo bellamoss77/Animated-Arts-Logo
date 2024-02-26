@@ -32,6 +32,39 @@ body {
     .presents {
         //border: 2px solid red;
         width: 50vw;
+        path {
+            stroke: transparent;
+        }
     }
+}
+
+#nextBtn, #prevBtn {
+    position: absolute;
+    margin-bottom: 2px;
+    padding: 0 3%;
+    border-radius: 50%;
+    flex-shrink: 0;
+    transform-origin: center;
+    opacity: 0.5;
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 2rem;
+    }
+    &:hover {
+        cursor: pointer;
+        opacity: 1;
+        animation: pulsingArrow 2s infinite;
+
+    }
+}
+#prevBtn {
+    left: 5%;
+    top: 0;
+    
+}
+#nextBtn {
+    right: 5%;
+    top: 0;
 }
     

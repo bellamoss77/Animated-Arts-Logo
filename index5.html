@@ -3,14 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logo Animation 4</title>
-    <link rel="stylesheet" href="Styles/styles4.css">
+    <title>Logo Animation 5</title>
+    <link rel="stylesheet" href="Styles/styles5.css">
     <script src="https://kit.fontawesome.com/8f1f53b08b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="animationScene">
+    <div class="scene">
+        <svg id="motion-paths" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1940.01 1080">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: none;
+                  stroke-width: 0px;
+                }
+              </style>
+            </defs>
+            <path id="PATH_PV" class="cls-1" d="M.01,0c-1.84,183.63,237.63-3.21,306.05,128.37s-231.58,197.37-98.68,268.42,259.21-111.84,328.95,0,144.74,171.95,240.79,143.21,80.26-224.79,80.26-224.79"/>
+            <path id="PATH_AR" class="cls-1" d="M.01,1080c-1.84-177.19,237.63,3.1,306.05-123.87,68.42-126.96-231.58-190.45-98.68-259.01,132.89-68.56,259.21,107.92,328.95,0,69.74-107.92,144.74-165.92,240.79-138.19,96.05,27.73,80.26,216.91,80.26,216.91"/>
+            <path id="PATH_TS" class="cls-1" d="M1940,1080c1.84-177.19-237.63,3.1-306.05-123.87-68.42-126.96,231.58-190.45,98.68-259.01-132.89-68.56-259.21,107.92-328.95,0-69.74-107.92-144.74-165.92-240.79-138.19-96.05,27.73-80.26,216.91-80.26,216.91"/>
+            <path id="PATH_CC" class="cls-1" d="M1940,0c1.84,183.63-237.63-3.21-306.05,128.37-68.42,131.58,231.58,197.37,98.68,268.42-132.89,71.05-259.21-111.84-328.95,0-69.74,111.84-144.74,171.95-240.79,143.21-96.05-28.74-80.26-224.79-80.26-224.79"/>
+          </svg>
         <div class="logoElements">
-            <img class="pv" src="logoElements/Pv.png" alt="pv">
+            <img src="logoElements/Pv.png" alt="pv" class="pv">
             <img src="logoElements/Cc.png" alt="cc" class="cc">
             <img src="logoElements/Ar.png" alt="ar" class="ar">
             <img src="logoElements/Ts.png" alt="ts" class="ts">
@@ -72,13 +86,11 @@
     </g>
         </svg>
     </div>
-    <div id="prevBtn">
-        <a href="index3.html"><i class="fa-solid fa-chevron-left"></i></a>
-    </div>
-    <div id="nextBtn">
-        <a href="index5.html"><i class="fa-solid fa-chevron-right"></i></a>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
-    <script src="Page4/code4.js"></script>  
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js" integrity="sha512-lhK7xTsFM6DPXOtQQyPe+NmpoFEheKDHjM/5QzpFRiE1KySgtBfEzYz4XowvB+CAWcBLBGWinhh41uNaOtrSZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="code5.js"></script> 
 </body>
 </html>
