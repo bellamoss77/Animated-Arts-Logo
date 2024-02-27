@@ -5,6 +5,24 @@
     align-items: $align;
 }
 
+@keyframes pulsingArrow {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 body {
     width: 100%;
     height: 100%;

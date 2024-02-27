@@ -9,85 +9,63 @@ let masterTl = gsap.timeline();
 
 masterTl.fromTo(pv, {
     scale: 0,
-    y: -100,
-    rotation: -360
+    rotation: -1080
 },
 {
-    scale: 1,
-    y: 100,
-    x: 100,
+    scale: 1.5,
     rotation: 0,
-    duration: 2,
-    ease: 'bounce'
+    duration: 1.5,
+    ease: 'elastic'
 })
 masterTl.to(pv, {
-    y: 0,
-    x: 0,
-    rotation: 360,
+    scale: 1,
     duration: 1,
-    ease: 'elastic'
+    ease: 'bounce'
 })
 masterTl.fromTo(cc, {
     scale: 0,
-    y: 300,
-    x: 300,
-    rotation: -90
+    rotation: -1440
 },
 {
-    scale: 1,
-    y: -50,
-    x: -100,
-    rotation: 90,
-    duration: 2,
-    ease: 'bounce'
+    scale: 1.5,
+    rotation: 0,
+    duration: 1.5,
+    ease: 'elastic'
 }, '<')
 masterTl.to(cc, {
-    y: 0,
-    x: 0,
-    rotation: 0,
+    scale: 1,
     duration: 1,
-    ease: 'elastic'
+    ease: 'bounce'
 })
 masterTl.fromTo(ar, {
     scale: 0,
-    y: 300,
-    x: 300,
-    rotation: -360
+    rotation: -1080
 },
-{   scale: 1,
-    x: -100,
-    y: -100,
+{   
+    scale: 1.5,
     rotation: 0,
-    duration: 2,
-    ease: 'bounce',
+    duration: 1.5,
+    ease: 'elastic'
 }, '<');
 masterTl.to(ar, {
-    y: 0,
-    x: 0,
-    rotation: 360,
+    scale: 1,
     duration: 1,
-    ease: 'elastic',
-}, '-=0.5')
+    ease: 'bounce'
+})
 masterTl.fromTo(ts, {
     scale: 0,
-    y: -200,
-    x: 300,
-    rotation: -720
+    rotation: -1440
 },
 {
-    scale: 1,
-    y: 100,
-    x: -50,
+    scale: 1.5,
     rotation: 0,
-    duration: 2,
-    ease: 'bounce'
+    duration: 1.5,
+    ease: 'elastic'
 }, '<')
 masterTl.to(ts, {
-    y: 0,
-    x: 0,
-    rotation: 360,
+    scale: 1,
     duration: 1,
-    ease: 'elastic'
+    ease: 'bounce'
 })
 masterTl.to(presents, {
     rotationX: 0,

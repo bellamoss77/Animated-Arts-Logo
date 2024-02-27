@@ -1,3 +1,20 @@
+@keyframes pulsingArrow {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +39,12 @@ body {
   width: 100vw;
   height: 100vh;
 }
+.scene #motion-paths {
+  width: 90vw;
+  height: 100vh;
+  position: absolute;
+  top: 30%;
+}
 .scene .logoElements {
   width: 340px;
   display: flex;
@@ -29,4 +52,35 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+.scene .presents {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 50vw;
+}
+.scene .presents path {
+  stroke: transparent;
+}
+
+#prevBtn {
+  position: absolute;
+  margin-bottom: 2px;
+  padding: 0 3%;
+  border-radius: 50%;
+  flex-shrink: 0;
+  transform-origin: center;
+  opacity: 0.5;
+  left: 5%;
+  top: 0;
+}
+#prevBtn a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+}
+#prevBtn:hover {
+  cursor: pointer;
+  opacity: 1;
+  animation: pulsingArrow 2s infinite;
 }/*# sourceMappingURL=styles5.css.map */

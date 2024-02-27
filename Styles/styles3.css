@@ -1,4 +1,21 @@
 @import url("https://use.typekit.net/efa7ivj.css");
+@keyframes pulsingArrow {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 body {
   height: 100vh;
   width: 100vw;
